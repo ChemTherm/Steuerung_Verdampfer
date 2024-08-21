@@ -1,0 +1,35 @@
+{
+    
+    "TKINTER":{
+        "Name": "MFC Steuerung",
+        "background-color": "#F2F2F2",
+        "border-color": "#000000",
+        "tabpadx": 50,
+        "font-size": 22,
+        "screen_width": 1600,
+        "screen_height": 1000
+    },
+    "Background":{
+        "name": "./img/Background1Reactor.png",
+        "width": 624,
+        "height": 862,
+        "x": 600,
+        "y": 100
+    },
+    "Close":{
+        "name": "./img/close.png",
+        "width": 50,
+        "height": 50,
+        "factor": 1,
+        "x": 700,
+        "y": 50
+        
+    },  
+        
+    "PATH":{
+        "SaveFile": "./Daten/Test.dat",
+        "images": "./img/"
+    }
+    
+    
+}
