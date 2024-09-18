@@ -71,6 +71,20 @@ config = {
         "x": 800,
         "y": 540,
     },
+         
+    "Heater_3": { 
+        "type": "easy_PI",
+        "input_device": "extern",
+        "security_input_device": "off",
+        "output_type": "PWM",
+        "output_device": "Tmf",
+        "output_channel": 0,
+        "unit": "%",
+        "P_Value": 0.018,
+        "I_Value": 0.000013,
+        "x": 800,
+        "y": 410,
+    },
     
     "T_R1": { 
         "type": "thermocouple",
