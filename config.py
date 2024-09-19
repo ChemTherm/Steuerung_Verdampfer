@@ -1,9 +1,9 @@
 config = {
     "MFC_Air": { 
         "type": "mfc",
-        "input_device": "XXX", # AnalogInSignal
+        "input_device": "XXa", # AnalogInSignal
         "input_channel": 0, 
-        "output_device": "XXX",# AnalogOutSignal
+        "output_device": "XXb",# AnalogOutSignal
         "output_channel": 0,        
         "x": 50,    # Position in Gui
         "y": 750,     # Position in Gui
@@ -20,9 +20,9 @@ config = {
     },
     "MFC_N2": { 
         "type": "mfc",
-        "input_device": "XXX", # AnalogInSignal
+        "input_device": "XXc", # AnalogInSignal
         "input_channel": 1, 
-        "output_device": "XX",# AnalogOutSignal
+        "output_device": "XXd",# AnalogOutSignal
         "output_channel": 0,        
         "x": 50,    # Position in Gui
         "y": 750,     # Position in Gui
@@ -40,7 +40,7 @@ config = {
     
     "p_1": { 
         "type": "pressure",
-        "input_device": "XXX",
+        "input_device": "XXe",
         "input_channel": 0,
         "x": 370,
         "y": 940,
@@ -56,7 +56,7 @@ config = {
     
     "p_2": { 
         "type": "pressure",
-        "input_device": "XXX",
+        "input_device": "XXf",
         "input_channel": 1,
         "gradient":1,
         "y-axis":   0,
@@ -77,7 +77,7 @@ config = {
         "input_device": "T_R1",
         "security_input_device": "T_S1",
         "output_type": "PWM",
-        "output_device": "XXX",
+        "output_device": "XXg",
         "output_channel": 0,
         "x": 370,
         "y": 940,
@@ -97,7 +97,7 @@ config = {
         "input_device": "T_R2",
         "security_input_device": "T_S2",
         "output_type": "PWM",
-        "output_device": "XXX",
+        "output_device": "XXh",
         "output_channel": 1,
         "x": 800,
         "y": 670,
@@ -115,7 +115,7 @@ config = {
     "T_R1": { 
         "type": "thermocouple",
         "tc_type": "K",
-        "input_device": "XXX",
+        "input_device": "XXi",
         "x": 650,
         "y": 670,
         "DeviceInfo":{  "Bezeichnung":"Verdampfer Regeltemperatur",
@@ -126,7 +126,7 @@ config = {
     "T_R2": { 
         "type": "thermocouple",
         "tc_type": "K",
-        "input_device": "XXX",
+        "input_device": "XXj",
         "x": 650,
         "y": 540,
         "DeviceInfo":{  "Bezeichnung":"Heizung1 Regeltemperatur",
@@ -137,7 +137,7 @@ config = {
     "T_1": { 
         "type": "thermocouple",
         "tc_type": "K",
-        "input_device": "XXX",
+        "input_device": "XXk",
         "x": 955,
         "y": 890,
         "DeviceInfo":{  "Bezeichnung":"Temperatur Messstelle 1",
@@ -148,7 +148,7 @@ config = {
     "T_S1": { 
         "type": "thermocouple",
         "tc_type": "K",
-        "input_device": "XXX",
+        "input_device": "XXl",
         "input_channel": 0,
         "x": 955,
         "y": 890,
@@ -160,7 +160,7 @@ config = {
     "T_S2": { 
         "type": "thermocouple",
         "tc_type": "K",
-        "input_device": "XXX",
+        "input_device": "XXm",
         "input_channel": 0,
         "x": 955,
         "y": 890,
