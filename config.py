@@ -2,7 +2,7 @@ config = {
     "MFC_Air": { 
         "type": "mfc",
         "input_device": "23UA", # AnalogInSignal
-        "input_channel": 0, 
+        "input_channel": 1, 
         "output_device": "Zvg",# AnalogOutSignal
         "output_channel": 0,        
         "x": 50,    # Position in Gui
@@ -88,7 +88,7 @@ config = {
                         "Power": "500", # Angabe der Leistung in Watt
                         "unit": "W",    
                         "P_Value": 0.018,
-                        "I_Value": 0.000013,
+                        "I_Value": 0.00013,
                         }
     },
     
@@ -183,3 +183,63 @@ config = {
     #                    }
     #},     
 }
+tkinter = {     
+    "TKINTER":{
+        "Name": "Steuerung",
+        "background-color": "#F2F2F2",
+        "border-color": "#000000",
+        "tabpadx": 50,
+        "font-size": 22,
+        "screen_width": 1600,
+        "screen_height": 1000,
+        "has_save_function": True,  # Steuert, ob Save-Funktion vorhanden ist
+        "has_close_button": True    # Steuert, ob ein Close-Button angezeigt wird
+    
+    },
+    "Background":{
+        "name": "./img/Hintergrund.png",
+        "width": 1280,
+        "height": 720,
+        "x": 0,
+        "y": 0
+    },
+    "Close":{
+        "name": "./img/close.png",
+        "width": 50,
+        "height": 50,
+        "factor": 1,
+        "x": 700,
+        "y": 50
+        
+    },  
+    "Frames": {  # Neue Konfiguration für optionale Frames
+        "control": {
+            "enabled": True,
+            "title": "Handsteuerung",  # Titel für das Label im Frame
+            "fg_color": "#FFFFFF",
+            "border_color": "#000000",
+            "border_width": 5,
+            "padx": 20,
+            "pady": 20
+        },
+
+        "mfc":{
+            "enabled": True,
+            "title": "MFCs",  # Titel für das Label im Frame
+            "fg_color": "#FFFFFF",
+            "border_color": "#000000",
+            "border_width": 5,
+            "padx": 30,
+            "pady": 30
+        },
+        "timer": {
+            "enabled": False  # Wenn False, wird dieser Frame nicht erstellt
+        }
+    },
+        
+    "PATH":{
+        "SaveFile": "./Daten/Test.dat",
+        "images": "./img/"
+    }
+}
+
