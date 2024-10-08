@@ -41,15 +41,15 @@ config = {
     "p_1": { 
         "type": "pressure",
         "input_device": "ZZ1",  #Obere Drucksensor
-        "input_channel": 0,
-        "x": 370,
-        "y": 940,
+        "input_channel": 1,
+        "x": 580,
+        "y": 370,
         "DeviceInfo":{  "Bezeichnung":"IFM PT5054",
                         "Seriennummer":"TestNummer789",
                         "ChemTherm-DeviceID": 18,
                         "Information": "10 bar",
                         "unit": "kPa",
-                        "gradient": 0.5, # Steigung umrechnung Rohdaten mV in mL/min 
+                        "gradient": 0.5, # Steigung umrechnung Rohdaten nA in bar 
                         "y-axis":   0,  # Y-Achsenabschnitt umrechnung Rohdaten
                         }
     },
@@ -60,8 +60,8 @@ config = {
         "input_channel": 1,
         "gradient":1,
         "y-axis":   0,
-        "x": 955,
-        "y": 890,
+        "x": 500,
+        "y": 370,
         "DeviceInfo":{  "Bezeichnung":"IFM PT5052",
                         "Seriennummer":"TestNummer1111",
                         "ChemTherm-DeviceID": 19,
