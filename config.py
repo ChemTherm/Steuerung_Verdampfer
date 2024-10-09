@@ -9,7 +9,7 @@ config = {
         "y": 591,     # Position in Gui
         "Box": 1,
         "DeviceInfo":{  "Bezeichnung":"Bronkhorst EL-FLOW Prestige",
-                        "Seriennummer":"TestNummer123",
+                        "Seriennummer":"M1920752 4B",
                         "ChemTherm-DeviceID": 15,
                         "Information": "10 l/min Air",
                         "unit": "l/min",
@@ -42,8 +42,6 @@ config = {
     #    "type": "pressure",
     #    "input_device": "XXJ",  #Untere Drucksensor
     #    "input_channel": 1,
-    #    "gradient":1,
-    #    "y-axis":   0,
     #    "x": 845,
     #    "y": 160,
     #    "DeviceInfo":{  "Bezeichnung":"IFM PT5052",
@@ -61,17 +59,15 @@ config = {
         "type": "pressure",
         "input_device": "ZZ1",  #Untere Drucksensor
         "input_channel": 1,
-        "gradient":1,
-        "y-axis":   0,
         "x": 390,
         "y": 494,
-        "DeviceInfo":{  "Bezeichnung":"IFM PT5052",
-                        "Seriennummer":"TestNummer1111",
+        "DeviceInfo":{  "Bezeichnung":"IFM PT5404",
+                        "Seriennummer":"0AD2307",
                         "ChemTherm-DeviceID": 19,
                         "Information": "25 bar",
-                        "unit": "mbar",
-                        "gradient": 1.4993, # Steigung umrechnung Rohdaten mA in mbar 
-                        "y-axis":   3.3333,  # Y-Achsenabschnitt umrechnung Rohdaten
+                        "unit": "bar",
+                        "gradient": 0.625, # Steigung umrechnung Rohdaten mA in mbar 
+                        "y-axis":   2.4,  # Y-Achsenabschnitt umrechnung Rohdaten
                         }
     },
     
@@ -93,14 +89,14 @@ config = {
                         "Power": 500, # Angabe der Leistung in Watt
                         "unit": "Watt",    
                         "P_Value": 0.018,
-                        "I_Value": 0.00013,
+                        "I_Value": 0.00021,
                         }
     },
 
     "Heizung An/Aus": { 
         "type": "valve",
         "output_type": "DigitalOut",
-        "output_device": "XXX",
+        "output_device": "23ND",
         "output_channel": 1,
         "x": 90,
         "y": 245,

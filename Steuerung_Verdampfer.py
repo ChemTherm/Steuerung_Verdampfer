@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 def initialize_tfh():
     try:
-        return TFH("localhost", 4223, debug_mode = 1  )
+        return TFH("localhost", 4223, debug_mode = 0  )
     except Exception as e:
         logger.error(f"Failed to initialize TFH: {e}")
         sys.exit(1)
