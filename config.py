@@ -90,10 +90,24 @@ config = {
                         "Seriennummer":"TestNummer1122",
                         "ChemTherm-DeviceID": 20,
                         "Information": "TU München",
-                        "Power": "500", # Angabe der Leistung in Watt
-                        "unit": "W",    
+                        "Power": 500, # Angabe der Leistung in Watt
+                        "unit": "Watt",    
                         "P_Value": 0.018,
                         "I_Value": 0.00013,
+                        }
+    },
+
+    "Heizung An/Aus": { 
+        "type": "valve",
+        "output_type": "DigitalOut",
+        "output_device": "XXX",
+        "output_channel": 1,
+        "x": 90,
+        "y": 245,
+        "DeviceInfo":{  "Bezeichnung":"Schalter Schütz 230V Heizungen",
+                        "Seriennummer":"xxx",
+                        "ChemTherm-DeviceID": 20,
+                        "Information": "xxx"
                         }
     },
     
@@ -282,6 +296,21 @@ config = {
     #                    "unit": "ml/min",
     #                    }
     #},     
+
+    "HPLC-Pumpe": { 
+        "type": "Vorgabe",
+        "x": 70,
+        "y": 140,
+        "Box": 1,
+        "DeviceInfo":{  "Bezeichnung":"HPLC Pumpe KV.1 Test1",
+                        "Seriennummer":"TestNummer123",
+                        "ChemTherm-DeviceID": 15,
+                        "Information": "Test DLR",
+                        "unit": "ml/min",
+                        "gradient": 1, 
+                        "y-axis":   0,  
+                        }
+    }
 }
 tkinter = {     
     "TKINTER":{
@@ -319,10 +348,10 @@ tkinter = {
             "fg_color": "#FFFFFF",
             "border_color": "#000000",
             "border_width": 5,
-            "padx": 650,
-            "pady": 130,
-            "x": 110,    # Position in Gui
-            "y": 91,     # Position in Gui
+            "padx": 20,
+            "pady": 20,
+            "x": 550,    # Position in Gui
+            "y": 420,     # Position in Gui
         },
 
         "mfc":{
