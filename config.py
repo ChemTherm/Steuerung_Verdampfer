@@ -318,6 +318,7 @@ tkinter = {
         "screen_width": 1395,
         "screen_height": 724,
         "has_save_function": True,  # Steuert, ob Save-Funktion vorhanden ist
+        "has_excel_function": True,    # Steuert, ob ein Close-Button angezeigt wird
         "has_close_button": True    # Steuert, ob ein Close-Button angezeigt wird
     
     },
