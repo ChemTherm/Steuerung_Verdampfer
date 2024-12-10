@@ -67,7 +67,7 @@ config = {
                         "Information": "25 bar",
                         "unit": "bar",
                         "gradient": 0.625, # Steigung umrechnung Rohdaten mA in mbar 
-                        "y-axis":   2.4,  # Y-Achsenabschnitt umrechnung Rohdaten
+                        "y-axis":   2.5,  # Y-Achsenabschnitt umrechnung Rohdaten
                         }
     },
     
@@ -131,7 +131,7 @@ config = {
 
 
     "T_R1": { 
-        "type": "thermocouple",
+        "type": "thermocouple", #### Hier vllt lieber thermocouple_r?####
         "tc_type": "K",
         "input_device": "23hX",
         "x": 565,
@@ -193,8 +193,8 @@ config = {
     #}, 
 
 
-    "T_S2": { 
-        "type": "thermocouple",
+    "T_S1": { 
+        "type": "thermocouple", ####Hier vllt lieber thermocouple_s?####
         "tc_type": "K",
         "input_device": "WQx",
         "input_channel": 0,

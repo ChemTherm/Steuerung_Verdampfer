@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 def initialize_tfh():
     try:
-        return TFH("localhost", 4223, debug_mode = 1  )
+        return TFH("localhost", 4223, debug_mode = 0  )
     except Exception as e:
         logger.error(f"Failed to initialize TFH: {e}")
         sys.exit(1)
@@ -39,7 +39,7 @@ def main():
     tfh_obj = initialize_tfh()
 
     # Initialize GUI
-    tk_obj = initialize_gui( tfh_obj)
+    tk_obj = initialize_gui(tfh_obj)
 
     try:
         # Start the main loop
